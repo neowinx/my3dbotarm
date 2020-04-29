@@ -8,7 +8,7 @@
     <color rgba="77 5 232 1" />
   </material>
   <material name="malachita">
-    <color rgba="64 0 230 0.25" />
+    <color rgba="64 0 230 1" />
   </material>
   <material name="electric_indigo">
     <color rgba="140 252 20 1" />
@@ -19,7 +19,6 @@
         <origin rpy="0 0 0" xyz="0 0 0.225" />
         <geometry>
           <mesh filename="package://mrm2/meshes/Base_reduced.stl" scale="0.01 0.01 0.01" />
-          <!-- <box size="1.623 0.6400 0.4500" /> -->
         </geometry>
         <material name="orange" />
       </visual>
