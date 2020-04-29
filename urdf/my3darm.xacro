@@ -79,4 +79,40 @@
       </visual>
   </link>
 
+  <joint name="link_03__link_04" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="-1.287 0 0.057"/>
+    <parent link="link_03"/>
+    <child link="link_04"/>
+  </joint>
+
+  <link name="link_04">
+      <visual>
+        <origin rpy="0 0 0" xyz="-0.05 0 0" />
+        <geometry>
+          <mesh filename="package://mrm2/meshes/Link4_reduced.stl" scale="0.01 0.01 0.01" />
+        </geometry>
+        <material name="orange" />
+      </visual>
+  </link>
+
+  <joint name="link_04__link_05" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="-0.4327 0 0"/>
+    <parent link="link_04"/>
+    <child link="link_05"/>
+  </joint>
+
+  <link name="link_05">
+      <visual>
+        <origin rpy="0 0 0" xyz="0 0.0416 -0.0004" />
+        <geometry>
+          <mesh filename="package://mrm2/meshes/Link5_reduced.stl" scale="0.01 0.01 0.01" />
+        </geometry>
+        <material name="red" />
+      </visual>
+  </link>
+
 </robot>
