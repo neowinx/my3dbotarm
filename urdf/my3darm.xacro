@@ -8,7 +8,7 @@
     <color rgba="77 5 232 1" />
   </material>
   <material name="malachita">
-    <color rgba="64 0 230 1" />
+    <color rgba="64 0 230 0.25" />
   </material>
   <material name="electric_indigo">
     <color rgba="140 252 20 1" />
@@ -112,6 +112,42 @@
           <mesh filename="package://mrm2/meshes/Link5_reduced.stl" scale="0.01 0.01 0.01" />
         </geometry>
         <material name="red" />
+      </visual>
+  </link>
+
+  <joint name="link_05__gripper_01" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 -0.1225 -0.1605"/>
+    <parent link="link_05"/>
+    <child link="gripper_01"/>
+  </joint>
+
+  <link name="gripper_01">
+      <visual>
+        <origin rpy="0 0 0" xyz="-0.19 -0.04 0" />
+        <geometry>
+          <mesh filename="package://mrm2/meshes/Gripper1_reduced.stl" scale="0.01 0.01 0.01" />
+        </geometry>
+        <material name="malachita" />
+      </visual>
+  </link>
+
+  <joint name="link_05__gripper_02" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 0.1225 -0.1605"/>
+    <parent link="link_05"/>
+    <child link="gripper_02"/>
+  </joint>
+
+  <link name="gripper_02">
+      <visual>
+        <origin rpy="0 0 0" xyz="-0.19 0.039 0" />
+        <geometry>
+          <mesh filename="package://mrm2/meshes/Gripper2_reduced.stl" scale="0.01 0.01 0.01" />
+        </geometry>
+        <material name="electric_indigo" />
       </visual>
   </link>
 
