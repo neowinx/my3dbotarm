@@ -98,7 +98,7 @@
   </link>
 
   <joint name="link_04__link_05" type="revolute">
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
     <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.5"/>
     <origin rpy="0 0 0" xyz="-0.4327 0 0"/>
     <parent link="link_04"/>
@@ -107,7 +107,7 @@
 
   <link name="link_05">
       <visual>
-        <origin rpy="0 0 0" xyz="0 0.0416 -0.0004" />
+        <origin rpy="0 0 0" xyz="0 0.0005 0.0416" />
         <geometry>
           <mesh filename="package://mrm2/meshes/Link5_reduced.stl" scale="0.01 0.01 0.01" />
         </geometry>
