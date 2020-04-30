@@ -5,7 +5,7 @@
     <color rgba="84 211 0 1" />
   </material>
   <material name="red">
-    <color rgba="77 5 232 1" />
+    <color rgba="207 0 15 1" />
   </material>
   <material name="malachita">
     <color rgba="64 0 230 1" />
@@ -20,7 +20,7 @@
         <geometry>
           <mesh filename="package://my3dbotarm_description/meshes/Base_reduced.stl" scale="0.01 0.01 0.01" />
         </geometry>
-        <material name="orange" />
+	<!-- <material name="orange" /> -->
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0.225" />
@@ -44,7 +44,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Link1_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="red" />
+      <!-- <material name="red" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.1875" />
@@ -68,7 +68,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Link2_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="malachita" />
+      <!-- <material name="malachita" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.58323" />
@@ -92,7 +92,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Link3_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="electric_indigo" />
+      <!-- <material name="electric_indigo" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.65 0 0" />
@@ -116,7 +116,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Link4_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="orange" />
+      <!-- <material name="orange" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.05 0 0" />
@@ -140,7 +140,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Link5_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="red" />
+      <!-- <material name="red" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0.0005 0.0416" />
@@ -164,7 +164,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Gripper1_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="malachita" />
+      <!-- <material name="malachita" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.19 -0.04 0" />
@@ -188,7 +188,7 @@
       <geometry>
         <mesh filename="package://my3dbotarm_description/meshes/Gripper2_reduced.stl" scale="0.01 0.01 0.01" />
       </geometry>
-      <material name="electric_indigo" />
+      <!-- <material name="electric_indigo" /> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.19 0.039 0" />
