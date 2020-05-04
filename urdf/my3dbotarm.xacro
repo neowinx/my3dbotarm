@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<robot name="my3darm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="my3dbotarm" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <material name="orange">
     <color rgba="84 211 0 1" />
   </material>
@@ -14,7 +14,7 @@
     <color rgba="140 252 20 1" />
   </material>
 
-  <link name="base_link">
+  <link name="base">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0.0225" />
         <geometry>
@@ -30,11 +30,11 @@
       </collision>
   </link>
     
-  <joint name="base_link__link_01" type="revolute">
+  <joint name="base__link_01" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" lower="-1.5" upper="1.5" velocity="0.5"/>
     <origin rpy="0 0 0" xyz="-0.0386 0 0.0425"/>
-    <parent link="base_link"/>
+    <parent link="base"/>
     <child link="link_01"/>
   </joint>
     
