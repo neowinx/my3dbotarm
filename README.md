@@ -45,7 +45,9 @@ roslaunch my3dbotarm_moveit_config demo.launch
 ./rosserial_init.sh
 ```
 
-## Open my3dbotarm_description rviz.launch
+Start playing with the arm in moveit and the robot arm should be following the trayectories and that's it 😊
+
+# RViz Description
 
 If you want to open rviz with the launch file provided in **my3dbotarm_descripcion/launch/rviz.launch** you will need to install the **ros-melodic-joint-state-publisher-gui** package before
 
