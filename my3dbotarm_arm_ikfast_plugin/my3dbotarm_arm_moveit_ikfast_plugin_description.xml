@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="lib/libmy3dbotarm_arm_moveit_ikfast_plugin">
+  <class base_class_type="kinematics::KinematicsBase" name="my3dbotarm_arm/IKFastKinematicsPlugin" type="my3dbotarm_arm::IKFastKinematicsPlugin">
+    <description>IKFast61 plugin for closed-form kinematics of my3dbotarm arm</description>
+  </class>
+</library>

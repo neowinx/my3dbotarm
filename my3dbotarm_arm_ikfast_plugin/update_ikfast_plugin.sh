@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py --search_mode=OPTIMIZE_MAX_JOINT --srdf_filename=my3dbotarm.srdf --robot_name_in_srdf=my3dbotarm --moveit_config_pkg=my3dbotarm_moveit_config my3dbotarm arm my3dbotarm_arm_ikfast_plugin base link_05 /home/david/simulation_ws/src/my3dbotarm_arm_ikfast_plugin/src/my3dbotarm_arm_ikfast_solver.cpp

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: my3dbotarm_description
+    relative_path: urdf/my3dbotarm.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/my3dbotarm.srdf
+  CONFIG:
+    author_name: Pedro Flores
+    author_email: pdavidflores@gmail.com
+    generated_timestamp: 1589485319
