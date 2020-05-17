@@ -28,7 +28,7 @@ void servo_cb(const sensor_msgs::JointState& cmd_msg){
   base_angle=radiansToDegrees(cmd_msg.position[0]);
   shoulder_angle=radiansToDegrees(cmd_msg.position[1]);
   elbow_angle=reverseRadiansToDegrees(cmd_msg.position[2]);
-  wrist_up_down_angle=radiansToDegrees(cmd_msg.position[3]);
+  wrist_up_down_angle=reverseRadiansToDegrees(cmd_msg.position[3]);
   wrist_rotate_angle=radiansToDegrees(cmd_msg.position[4]);
   gripper_angle=radiansToDegrees(cmd_msg.position[5]);
   
@@ -78,6 +78,6 @@ double radiansToDegrees(float position_radians)
 double reverseRadiansToDegrees(float position_radians)
 {
   position_radians = position_radians + 1.6;
-  position_radians = 3.14159265359 - position_radians
+  position_radians = 3.14159265359 - position_radians;
   return position_radians * 57.2958;
 }
