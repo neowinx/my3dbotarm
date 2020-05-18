@@ -42,7 +42,7 @@ void servo_cb(const sensor_msgs::JointState& cmd_msg){
 }
 
 
-ros::Subscriber<sensor_msgs::JointState> sub("joint_states", servo_cb);
+ros::Subscriber<sensor_msgs::JointState> sub("move_group/fake_controller_joint_states", servo_cb);
 
 void setup(){
   nh.getHardware()->setBaud(115200);
